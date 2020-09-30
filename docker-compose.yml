@@ -1,0 +1,12 @@
+version: '3'
+services:  
+
+  # Gauss
+  gauss: 
+    build: # Build configuration
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+
+
+  
