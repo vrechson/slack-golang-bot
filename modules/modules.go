@@ -1,7 +1,7 @@
 package modules
 
 import (
-	"github.com/vrechson/slack-golang-bot/modules/amass"
+	"github.com/vrechson/slack-golang-bot/modules/sample"
 )
 
 // Handler is a struct ta handle all modules
@@ -11,7 +11,7 @@ type Handler struct {
 
 // CreateModules Setup all modules
 func CreateModules() *Handler {
-	s, _ := sample.CreateSample()
+	s := sample.CreateSample()
 
 	return &Handler{s}
 }

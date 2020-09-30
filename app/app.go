@@ -8,14 +8,14 @@ import (
 	"time"
 
 	"github.com/vrechson/slack-golang-bot/config"
-	models "github.com/vrechson/slack-golang-bot/database/models"
+	//models "github.com/vrechson/slack-golang-bot/database/models"
 	repositories "github.com/vrechson/slack-golang-bot/database/repositories"
 	storages "github.com/vrechson/slack-golang-bot/database/storages"
 	botFactory "github.com/vrechson/slack-golang-bot/factory/bot"
 	dbFactory "github.com/vrechson/slack-golang-bot/factory/database"
 	modules "github.com/vrechson/slack-golang-bot/modules"
 	"github.com/vrechson/slack-golang-bot/slack"
-	"github.com/vrechson/slack-golang-bot/utils"
+	//"github.com/vrechson/slack-golang-bot/utils"
 )
 
 // SlackBot is the main structure containing all data types and the bot itselff
@@ -27,8 +27,8 @@ type SlackBot struct {
 	modules    *modules.Handler
 }
 
-// CreateApp setup every structure from Bug
-func CreateApp(conf *config.Config) *Bug {
+// CreateApp setup every structure from SlackBot
+func CreateApp(conf *config.Config) *SlackBot {
 
 	// Init the bot
 	bot, err := botFactory.BotFactory(conf)
